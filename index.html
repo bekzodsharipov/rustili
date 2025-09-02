@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muxtasar Abdullayeva</title>
+
+  <!-- Critical CSS inlined for faster rendering -->
+  <style>
+    /* Critical CSS for above-the-fold content */
+    * { margin: 0; padding: 0; box-sizing: border-box; } body { font-family: Arial, sans-serif; line-height: 1.5; } .hero { background-color: #f2f2f2; padding-bottom: 69px; } .hero__container { padding-top: 10px; max-width: 1200px; width: 100%; margin: 0 auto; padding-left: 20px; padding-right: 20px; display: flex; align-items: center; justify-content: space-between; gap: 46px; position: relative; } .hero__left { padding-top: 140px; max-width: 653px; width: 100%; } .hero__top { background-color: #dadada; position: absolute; top: 0; max-width: 320px; width: 100%; padding: 17px 25px; border-bottom-left-radius: 24px; border-bottom-right-radius: 24px; display: flex; align-items: center; gap: 5px; } .hero__top-text { font-weight: 400; font-size: 16.13px; line-height: 25px; margin-bottom: 6px; text-align: left; } .hero__top-date { font-weight: 400; font-size: 24.13px; line-height: 1.5; } .hero__top-date>span { color: #9b1121; } .calendar__img { min-width: 32px; } .hero__subtitle { font-weight: 400; font-size: 32px; line-height: 48px; color: #000000; margin-bottom: 4px; } .hero__title { width: 100%; margin-top: 0; margin-bottom: 9px; max-width: 316px; font-weight: 400; font-style: Black; font-size: 28px; line-height: 110%; text-wrap: wrap; letter-spacing: 0%; text-align: center; vertical-align: middle; text-transform: uppercase; } .hero__registerBtn { display: flex; align-items: center; justify-content: center; max-width: 430px; width: 100%; background-color: #6A34FF; border-radius: 30px; font-weight: 700; font-size: 18px; line-height: 23.25px; color: white; text-align: center; padding: 23px 48px; margin-bottom: 24px; border: none; cursor: pointer; } .hero__btn_box-text { font-weight: 400; font-size: 20px; line-height: 1.5; color: #444444; text-align: center; } .speakerImg { max-width: 296px; height: auto; object-fit: cover; } /* Mobile styles for critical path */ @media (max-width: 1085px) { .hero__right { display: none; } .hero__container { justify-content: center; padding-top: 0; } .hero__top { position: static; padding: 5px 20px; margin-bottom: 25px; border-bottom-left-radius: 24px; border-bottom-right-radius: 24px; gap: 10px; } .calendar__img { min-width: 24px; width: 24px; } .hero__top-text { font-size: 12px; margin-bottom: 0; } .hero__top-date { font-size: 20px; } .hero__left { padding-top: 0px; max-width: 320px; text-align: center; } .hero__title { font-size: 19px; line-height: 1; margin: 7px 0 12px 0; } .hero__subtitle { font-size: 20px; line-height: 30px; } .text-14 { font-size: 14px; line-height: 1.5; } .hero__registerBtn { padding: 23px 20px; border-radius: 15px; margin-bottom: 12px; font-size: 14px; max-width: 307px; margin-left: auto; margin-right: auto; } }
+  </style>
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="./images/speaker.avif" as="image" fetchpriority="high" />
+  <link rel="preload" href="./images/calendar.svg" as="image" />
+
+  <!-- Non-critical CSS loaded asynchronously -->
+  <link rel="preload" href=" ./css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet" href="./css/main.css" />
+  </noscript>
+
+
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero__container">
+      <div class="hero__left">
+        <div class="hero__top">
+          <img src="./images/calendar.svg" alt="Kalendar" class="calendar__img" loading="lazy" width="32" height="33" />
+          <div class="hero__top-card">
+            <p class="hero__top-date">9-sentabr</p>
+            <p class="hero__top-time">20:00</p>
+          </div>
+        </div>
+
+        <h1 class="hero__title">
+          Yillab ingliz tilidan qoqoilishdan charchadingizmi? Bu <span>3 ta dars</span> barchasini o’zgartiradi
+        </h1>
+
+
+        <div class="hero__center">
+          <img width="296" height="416" class="speakerImg" src="./images/speaker.avif" fetchpriority="high"
+            alt="Muxtasar Abdullayeva" />
+          <ul class="hero__right_info__box">
+            <h3 class="herp__right_infobox-title">Muxtasar Abdullayeva</h3>
+            <li class="hero__right_list">
+              <p class="hero__right_list__item">
+                Xalqaro ingliz tili ustoz | TESOL & TEFL
+                IELTS 8.0 | 5000+ muvaffaqiyatli o’quvchi </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__left_bottom">
+          <div class="hero__btn-box">
+            <button class="hero__registerBtn">BEPUL QATNASHISH >></button>
+            <div id="timer" aria-live="polite">00:02:00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <div class="description">
+    <div class="description__container">
+      <h2 class="description__title">3 kunlik <span>BEPUL</span> darsimda siz:</h2>
+      <div class="description__row">
+        <div class="description__col">
+          <h3 class="description__col-number">01</h3>
+          <p class="description__col-text">
+            Murakkab grammatikalarsiz oson metodikada ingliz tilini o’rganishning aniq strategiyasini
+          </p>
+        </div>
+        <div class="description__col">
+          <h3 class="description__col-number">02</h3>
+          <p class="description__col-texts">
+            1-darsdanoq inglizcha gapirishizga yordam beradigan 5 ta texnikani
+          </p>
+        </div>
+        <div class="description__col">
+          <h3 class="description__col-number">03</h3>
+          <p class="description__col-text">
+            Uyalmay, qo’rqmay, to’xatamay inglizcha gapirish uchun maxsus videodarslarni beraman.
+          </p>
+        </div>
+      </div>
+      <div class="hero__btn-box desc__btn">
+        <button class="hero__registerBtn">BEPUL QATNASHISH >></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Registration Modal -->
+  <div id="registrationModal" class="homeModal" style="display: none">
+    <div class="homeModalOverlay"></div>
+    <div class="form">
+      <button class="f-button" id="closeModalBtn">
+        <svg class="form-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="#FFFFFF">
+          <path d="M1 11L11 1M1 1.00001L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+        <svg class="form-svgs" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg>
+      </button>
+      <div class="form-container">
+        <div class="form-h1">
+          <h1>MASTERKLASSGA RO'YXATDAN O'TISH</h1>
+        </div>
+        <form id="registrationForm" name="contact-form">
+          <div class="form-div">
+            <label for="name">Ismingizni kiriting:</label>
+            <input type="text" id="name" name="name" />
+            <p class="error-message" id="nameError" style="display: none">
+              Iltimos, ismingizni kiriting
+            </p>
+
+            <label for="phone">Telefon raqamingiz:</label>
+            <div class="phone-input-container">
+              <div class="country-selector">
+                <div class="selected-country" id="selectedCountry">
+                  <span id="selectedCountryCode">+998</span>
+                  <svg id="dropdownIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+                <div class="country-dropdown" id="countryDropdown" style="display: none">
+                  <!-- Country options will be added by JavaScript -->
+                </div>
+              </div>
+              <input type="tel" id="phone" name="phone" placeholder="88 888 88 88" />
+            </div>
+            <p class="warning-p" id="phoneError" style="display: none">
+              ❌ Telefon raqam mos emas!
+            </p>
+            <button type="submit" class="submit-button" id="submitBtn">
+              DAVOM ETISH
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <script defer src="./js/app.js" ></script>
+</body>
+
+</html>
